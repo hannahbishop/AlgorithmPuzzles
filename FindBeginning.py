@@ -5,14 +5,14 @@ class Node:
     def setNext(self, node):
         self.next = node
 
-def printList(start):
+def print_list(start):
     curr = start
     while(curr != None):
         print(curr.value)
         curr = curr.next
     return
 
-def findFirstNode(start):
+def find_first_node(start):
     seen = {}
     curr = start
     while(curr != None):
@@ -37,6 +37,6 @@ def main():
     five.setNext(six)
     six.setNext(five)
     
-    print(findFirstNode(one).value)
+    print(find_first_node(one).value)
 
 main()
